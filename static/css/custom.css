@@ -1,8 +1,12 @@
-.image-cropper {
+.radial-avatar {
   width: 200px;
   height: 200px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
   margin-left: 25%;
+}
+
+.logo__cursor {
+  background: #209a0e;
 }
