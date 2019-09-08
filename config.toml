@@ -1,12 +1,13 @@
 baseurl = "https://akshaysasidharan.dev"
 languageCode = "en-us"
 theme = "hello-friend-ng"
+DefaultContentLanguage = "en"
 
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
+  dateformNumTime = "Monday, Jan 2, 2006"
 
   # Metadata mostly used in document's head
   description = "Technology blog by Akshay Sasidharan"
