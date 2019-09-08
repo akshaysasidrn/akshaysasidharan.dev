@@ -13,7 +13,7 @@ But I now realize that this line of thought is incorrect. Redundancy here also g
 
 In my hustle to climb up the stairs, planning to be motivated and create out content for folks who’d follow.
 
-And by programmer tradition - this snippet goes here saying:
+And by programmer tradition - this snippet goes here without saying:
 
 ```ruby
 puts 'Hello world!'
