@@ -1,7 +1,7 @@
 ---
 title: "Hello World!"
 date: 2019-09-08T22:24:08+05:30
-draft: true
+draft: false
 toc: false
 tags: ["random"]
 ---
@@ -18,7 +18,7 @@ This notion beautifully put out on a [keynote](https://youtu.be/X25xOhntr6s?t=27
 
 In my hustle to climb up the stairs to technical nirvana, planning to be motivated and create out content for folks who'd follow.
 
-And by programmer tradition - nothing is actually a beginning without:
+And by programmer tradition - this snippet goes without saying for this post:
 
 ```ruby
 puts 'Hello world!'
