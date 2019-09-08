@@ -19,7 +19,7 @@ DefaultContentLanguage = "en"
   # Default theme "light" or "dark"
   defaultTheme = "dark"
   homeSubtitle = "Software Engineer"
-  customCSS = ["css/custom.css"]
+  customCSS = ["/css/custom.css"]
 
   # Social icons
   [[params.social]]
