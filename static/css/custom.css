@@ -4,7 +4,9 @@
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  margin-left: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo__cursor {
