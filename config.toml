@@ -19,7 +19,7 @@ enableGitInfo = false
   contentTypeName = "posts"
   # Default theme "light" or "dark"
   defaultTheme = "dark"
-  homeSubtitle = "Software Engineer"
+  homeSubtitle = "System Analyst"
   customCSS = ["/css/custom.css"]
 
   # Social icons
