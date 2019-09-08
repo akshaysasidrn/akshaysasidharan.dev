@@ -46,7 +46,7 @@ enableGitInfo = false
 [languages]
   [languages.en]
     title = "Akshay Sasidharan"
-    subtitle = "Exploring computer wizadry"
+    subtitle = "Exploring computing wizadry"
     keywords = ""
     copyright = ""
     readOtherPosts = "Read other posts"
