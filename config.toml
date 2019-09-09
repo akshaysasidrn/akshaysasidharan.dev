@@ -4,6 +4,7 @@ theme = "hello-friend-ng"
 DefaultContentLanguage = "en"
 enableGitInfo = false
 googleAnalytics = "UA-147407762-1"
+disqusShortname = "akshaysasidharan-dev"
 
 [params]
   dateform        = "Jan 2, 2006"
