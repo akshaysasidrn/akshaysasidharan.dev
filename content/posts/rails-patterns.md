@@ -2,6 +2,7 @@
 title: "RoR patterns to familiarize"
 date: 2019-09-14T17:43:33+05:30
 draft: false
+comments: true
 tags:
   - rails
 ---
@@ -21,7 +22,7 @@ As the codebases grow with time, abstractions would eventually be necessary to D
 
 ### Service Objects
 
-Service object helps you to extract out the logic that shouldn't necessarily reside within your model or controller. Thus keeping your controller and models lean. These can be logic for making an API call, specific model callbacks or any other domain-specific action.
+Service object helps you to extract out the logic that shouldn't necessarily reside within your model or controller. Thus keeping your controller and models lean. These can be logic for making an API call, specific model callbacks or any other domain-specific action. If this logic is to be shared b/w controllers or models then [concerns](https://api.rubyonrails.org/v6.0.0/classes/ActiveSupport/Concern.html) are what you are looking for rather than service objects.
 
 Say you have a blog app wherein once a post is published, you'd want to notify your slack workgroup, create a tweet and then also send out emails to all the users subscribed to your mailing list. Of course you could add these all cases onto the `Post` model callbacks. But I'd advise you not to as callbacks make your code tightly coupled and will later be a pain in the ass. Why do you ask? Check [here](http://samuelmullen.com/2013/05/the-problem-with-rails-callbacks/).
 
