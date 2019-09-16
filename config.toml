@@ -2,7 +2,7 @@ baseurl = "https://akshaysasidharan.dev"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 DefaultContentLanguage = "en"
-enableGitInfo = false
+enableGitInfo = true
 googleAnalytics = "UA-147407762-1"
 disqusShortname = "akshaysasidharan-dev"
 
@@ -23,6 +23,7 @@ disqusShortname = "akshaysasidharan-dev"
   defaultTheme = "dark"
   homeSubtitle = "System Analyst"
   customCSS = ["/css/custom.css"]
+  gitUrl = "https://github.com/aksh93/akshaysasidharan.dev/commit/"
 
   # Social icons
   [[params.social]]
