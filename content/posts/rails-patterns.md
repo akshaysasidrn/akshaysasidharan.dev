@@ -14,7 +14,7 @@ I needlessly tried to write more of abstract code wherever possible - until a se
 
 > “There’s a sweet spot that represents the perfect compromise between comprehension and changeability, and it’s your job as a programmer to find it.” - **Excerpt From: Sandi Metz, Katrina Owen. “99 Bottles of OOP”**
 
-Code is more often read than it is written. And for each abstraction that we'd introduce there is a level of indirection along with it. These indirections in code add to the mental cost for a reader. The reader would need to know about the contracts that these abstractions honors to extend or modify it. Unless the code is to be reused or extended elsewhere, it is better to stay away from it. Moreover trying to do abstractions early could result in having the wrong ones in the code. It becomes more of a boon than bane.
+Code is more often read than it is written. And for each abstraction that we'd introduce there is a level of indirection along with it. These indirections in code add to the mental cost for a reader. The reader would need to know about the contracts that these abstractions honors to extend or modify it. Unless the code is to be reused or extended elsewhere, it is better to stay away from it. Moreover trying to do abstractions early could result in having the wrong ones in the code. It becomes more harmful than being beneficial.
 
 ## Patterns to add abstraction with simplicity
 
@@ -35,7 +35,7 @@ class PostNotificationService
   end
 
   def perform
-    return false unless post.published?
+    return false unless @post.published?
 
     send_notifications
   end
@@ -43,9 +43,9 @@ class PostNotificationService
   private
 
   def send_notifications
-    SlackNotificationService.new(post).perform
-    TwitterNotificationService.new(post).perform
-    MailingListNotificationService.new(post).perform
+    SlackNotificationService.new(@post).perform
+    TwitterNotificationService.new(@post).perform
+    MailingListNotificationService.new(@post).perform
   end
 end
 ```
@@ -210,7 +210,7 @@ class PostDecorator < SimpleDelegator
 end
 ```
 
-All the methods called on this method will be delegated onto the object we pass onto it's constructor. And we also get an opportunity to extend upon it. Pretty neat I would say.
+All the methods called on this object will be delegated onto the object we pass onto it's constructor. And we also get an opportunity to extend upon it. Pretty neat I would say.
 
 The controller and the corresponding view would be something like this:
 
@@ -249,4 +249,4 @@ end
 
 ## Conclusion
 
-By implementation of these patterns, we get to make our code loosely coupled, easily manageable, sanely testable and extendable. Since we honor the contracts for each of these abstractions and being widely adopted within the community - one can effortlessly navigate the codebase.
+By implementation of these patterns, we get to make our code loosely coupled, easily manageable, sanely testable and extendable. Since we honor the contracts for each of these abstractions - one can effortlessly navigate the codebase.
