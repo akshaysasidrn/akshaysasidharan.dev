@@ -356,7 +356,7 @@ pub extern fn convert_piglatin(src_filename: RubyString, dest_filename: RubyStri
 
 ```
 
-For convenience, we have type aliased for Ruby string. We have an unsafe block here as the strings are from Ruby runtime and Rust has no way to know if the string borrowed is valid or it's a lifetime for that matter. It is the responsibility of Ruby runtime to manage the memory for it.
+For convenience, we have type aliased for Ruby string. We have an unsafe block here as the strings are from Ruby runtime and Rust has no way to know if the string borrowed is valid or its lifetime for that matter. It is the responsibility of Ruby runtime to manage the memory for it.
 
 Recompiling our library post this change.
 
