@@ -2,7 +2,6 @@
 title: "RoR patterns to familiarize"
 date: 2019-09-14T17:43:33+05:30
 draft: false
-comments: true
 tags:
   - rails
 ---

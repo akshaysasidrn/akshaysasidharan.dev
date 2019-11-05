@@ -2,7 +2,6 @@
 title: "Extending Ruby with Rust"
 date: 2019-10-31T11:46:44+05:30
 draft: false
-comments: true
 tags:
   - ruby
   - rust
