@@ -21,7 +21,7 @@ disqusShortname = "akshaysasidharan-dev"
   contentTypeName = "posts"
   # Default theme "light" or "dark"
   defaultTheme = "dark"
-  homeSubtitle = "System Analyst"
+  homeSubtitle = "Team Lead"
   customCSS = ["/css/custom.css"]
   gitUrl = "https://github.com/aksh93/akshaysasidharan.dev/commit/"
 
@@ -45,6 +45,10 @@ disqusShortname = "akshaysasidharan-dev"
   [[params.social]]
     name = "instagram"
     url  = "https://www.instagram.com/akshaysasidharan/"
+
+  [[params.social]]
+    name = "spotify"
+    url  = "https://open.spotify.com/user/aksh_93"
 
 [languages]
   [languages.en]
